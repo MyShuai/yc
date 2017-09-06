@@ -1,0 +1,78 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: "微软雅黑";
+}
+.all {
+	width: 100%;
+	background: #fff;
+	min-width: 570px;
+}
+.header {
+	width: 100%;
+	height: 88px;
+	background: #39c6e3;
+	margin-bottom: 64px;
+}
+.header a {
+	display: block;
+	float: left;
+	margin-left: 4%;	
+	padding-top: 30px;
+	box-sizing: border-box;	
+}
+.header h2  {
+	float: left;
+	padding-top: 12px;
+	margin-left: 35.3%;
+	font-size: 36px;
+	color: #f3f3f3;
+}
+
+.button {
+	width: 100%;
+	margin-bottom: 438px;
+}
+.button-a1 {
+	width: 100%;
+	height: 95px;
+	padding-left: 2.7%;	
+	box-sizing: border-box;
+}
+.button-a1 p {
+	font-size: 36px;
+	color: #39c6e3;
+	line-height: 95px;
+	border-bottom: 1px solid #eee;
+}
+.button-a2 {
+	width: 100%;
+	height: 95px;
+	padding-left: 7.2%;	
+	box-sizing: border-box;
+}
+.button-a2 p {
+	font-size: 32px;
+	color: #8e8e8e;
+	line-height: 95px;
+
+}
+
+.update {
+     width: 100%;
+     height: 110px;
+}
+.update button {
+	width: 500px;
+	height: 110px;
+	margin-left: 16.5%;
+	border-radius: 20px;
+	background: #39c6e3; 
+	font-size: 36px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}

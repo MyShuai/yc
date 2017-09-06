@@ -1,0 +1,92 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: "微软雅黑";
+}
+.all {
+	width: 100%;
+	background: #eee;
+	min-width: 570px;
+}
+.header {
+	width: 100%;
+	height: 88px;
+	background: #39c6e3;
+}
+.header a {
+	display: block;
+	float: left;
+	margin-left: 4%;	
+	padding-top: 30px;
+}
+.header h2  {
+	float: left;
+	padding-top: 12px;
+	margin-left: 38.1%;
+	font-size: 36px;
+	color: #f3f3f3;
+}
+
+
+.content {
+	width: 100%;
+	height: 1184px;
+}
+.content-a1 {
+	width: 100%;
+	height: 94px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	background: #fff;
+	padding-left: 5.3%;
+	box-sizing: border-box;
+}
+.content-a1 p {
+	float: left;
+	height: 94px;
+	margin-right: 37.9%;
+	line-height: 94px;
+	font-size: 32px;
+	color: #333;
+}
+.content-a1 span {
+	float: left;
+	height: 94px;
+	line-height: 94px;
+	font-size: 32px;
+	color: #8e8e8e;
+	margin-right: 2.7%;
+}
+.content-a1 img {
+	margin-top: 36px;
+}
+.content-a2 {
+	width: 100%;
+	height: 94px;
+	border-bottom: 1px solid #e1e1e1;
+	background: #fff;
+	padding-left: 5.3%;
+	box-sizing: border-box;
+}
+.content-a2 p {
+	float: left;
+	height: 94px;
+	line-height: 94px;
+	margin-right: 41.9%;
+	font-size: 32px;
+	color: #333;
+}
+.content-a2 span {
+	float: left;
+	height: 94px;
+	line-height: 94px;
+	font-size: 32px;
+	color: #8e8e8e;
+	margin-right: 2.7%;
+}
+.content-a2 img {
+	margin-top: 36px;
+}

@@ -1,0 +1,122 @@
+@charset "utf-8";
+@media screen and (max-width:750px){
+	body{
+		margin:0;
+		padding: 0;
+		list-style:none;
+		text-decoration: none;
+	}
+	.wrap{
+		width: 100%;
+		height: 1334px;
+		background: url('../images/load_bg.jpg') center no-repeat;
+	}
+	.loadicon{
+		position: relative;
+		width: 100%;
+		height: 376px;
+	}
+	.loadicon img{
+		position: absolute;
+		left:50%;
+		width: 31.733%;
+		height: auto;
+		margin-top: 138px;
+		transform:translateX(-50%);
+	}
+	.inputs{
+		width: 100%;
+		height: 352px;
+		padding-top: 70px;
+		text-align: center;
+		box-sizing:border-box;
+	}
+	input.user{
+	width:66%;
+	height: 76px;
+	line-height: 76px;
+	padding-left: 14%;
+	background:url("../images/user.png") no-repeat 18px 12px;
+	border:none;
+	background-color:rgba(255,255,255,.3);
+	border-radius: 38px;
+	}
+	input::-webkit-input-placeholder{
+	color: #bbb !important; 
+	font-size: 28px;
+	font-family: "微软雅黑";
+	}
+	input.password{
+		background:url("../images/password.png") no-repeat 18px 12px;
+		background-color:rgba(255,255,255,.3);
+		margin-top: 78px;
+	}
+	.inputs p{
+		width: 15%;
+		min-width: 110px;
+		height: 52px;
+		line-height: 70px;
+		margin-left: 61.6%;
+	}
+	.inputs p a{
+		font-size: 22px;
+		color: #fff;
+	}
+	.inputs p a:active{
+		text-decoration: underline;
+	}
+	.loadbtn{
+		width: 100%;
+		height: 192px;
+		padding-top: 74px;
+		box-sizing:border-box;
+	}
+	.loadbtn p:first-child{
+		width: 31.2%;
+		height: 74px;
+		line-height: 74px;
+		text-align: center;
+		background: #204465;
+		border-radius: 37px;
+		margin: 0 auto;
+	}
+	.loadbtn p:first-child a{
+		font-size: 28px;
+		color: #fff;
+	}
+	.loadbtn p:last-child{
+		height: 44px;
+		line-height: 66px;
+		text-align: center;
+	}
+	.loadbtn p:last-child a{
+		font-size: 22px;
+		color: #fff;
+	}
+	.thirdparty{
+		width: 100%;
+		height: 416px;
+		text-align: center;
+		padding-top: 130px;
+	}
+	.thirdparty fieldset{
+		width: 82.93%;
+		margin:0 auto;
+		border: none;
+		border-top: 2px solid #e1e1e1;
+	}
+	.thirdparty fieldset legend{
+		padding: 0 24px;
+		font-size: 26px;
+		color: #fff;
+	} 
+	.thirdparty fieldset a{
+		width: 17.524%;
+		height: auto;
+		display: inline-block;
+		margin-right: 70px;
+	}
+	.thirdparty fieldset a:last-child{
+		margin-right: 0;
+	}
+}

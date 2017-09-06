@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布任务</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/anarchy.css">
+</head>
+<body>
+	<div class="header">
+		<a href="receive.html"><i class="left"></i></a>
+		<h2>接单状态</h2>
+		<a href="sixin.html"><i class="right"></i></a>
+	</div>
+	<div class="information">
+		<p>取件信息</p>
+	</div>
+	<div class="btn">
+		<div class="dizhi">
+		<p>地址</p>
+		<input type="text" id="btn" value="三餐中通快递">
+		</div>
+		<div class="xiangqing">
+		<p>详情</p>
+		<input type="text" id="btn" value="单号 41 18866884488 王鹏">
+		</div>
+	</div>
+	<div class="information">
+		<p>送达信息</p>
+	</div>
+	<div class="btn1">
+		<div class="dizhi">
+		<p>地址</p>
+		<input type="text" id="btn" value="1号宿舍楼">
+		</div>
+		<div class="xiangqing">
+		<p>详情</p>
+		<input type="text" id="btn" value="#110宿舍 王鹏">
+		</div>
+		<div class="shangjin">
+		<p>悬赏金</p>
+		<input type="text" id="btn" value="10">
+		</div>
+		<div class="time">
+		<p>时间</p>
+		<input type="text" id="btn" value="13点之前送到">
+		</div>
+		<div class="phone">
+		<p>联系电话</p>
+		<input type="text" id="btn" value="18866884488">
+		</div>
+		<div class="beizhu">
+		<p>备注</p>
+		<input type="text" id="btn" value="希望能快点送来">
+		</div>
+	</div>
+	<div class="jindu">
+		<p>订单进度</p>
+	</div>
+	<div class="footer"></div>
+	<div class="click">
+		<input class="cancel" type="button" value="取消接单" onclick="Obtn()">
+		<a href="schedule.html"><input class="sign" type="button" value="已到达"/></a>
+	</div>
+	<div class="tocancel" id="tocancel">
+		<div class="alert" id="alert">
+			<p>你确定要取消发单？</p>
+			<input class="quxiao" type="button" value="取消" id="bbb" onclick="quxiao()">
+			<input class="queding" type="button" value="确定" onclick="queding()">
+		</div>
+	</div>
+	<div class="toqueding" id="toqueding">
+		<a href="index.html"><div class="alert1" id="alert1" onclick="ccc()">
+			<p>你已成功取消发单</p>
+		</div>
+		</a>
+	</div>
+		<script>
+			function Obtn(){
+			var oBtn=document.getElementById('tocancel');
+			if(oBtn.style.display='none'){
+				oBtn.style.display='block';
+				}
+			}
+			function quxiao(){
+			var oBtn=document.getElementById('tocancel');
+			if(oBtn.style.display='block'){
+				oBtn.style.display='none';
+				}
+			}
+			function queding(){
+			var oBtn=document.getElementById('toqueding');
+			if(oBtn.style.display='none'){
+				oBtn.style.display='block';
+				}
+			}
+			function ccc(){
+			var oBtn=document.getElementById('toqueding');
+			var oBox=document.getElementById('tocancel');
+			oBtn.style.display='none';
+			oBox.style.display='none';
+			}
+		</script>
+</body>
+</html>

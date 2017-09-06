@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布任务</title>
+	<link rel="stylesheet" type="text/css" href="css/task3.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+	<div class="box">
+	<div class="header">
+		<a href="index.html"><i class="left"></i></a>
+		<h2>发布任务</h2>
+		<p onclick="javascript:Obtn()">帮助</p>
+	</div>
+	<div class="conter">
+		<ul>
+			<a href=""><li>类型</li></a>
+			<a href="task.html"><li>快递</li></a>
+			<a href="task2.html"><li>学习</li></a>
+			<a href=""><li class="express">吃喝</li></a>
+			<a href="task4.html"><li>其他</li></a>
+		</ul>
+	</div>
+	<div class="information">
+		<p>食物信息</p>
+	</div>
+	<div class="btn">
+		<div class="dizhi">
+		<p>地点</p>
+		<input type="text" id="btn" placeholder="例如: 超市/食堂/校外">
+		</div>
+		<div class="xiangqing">
+		<p>详情</p>
+		<input type="text" id="btn" placeholder="一桶泡面加根肠">
+		</div>
+	</div>
+	<div class="information">
+		<p>送达信息</p>
+	</div>
+	<div class="btn1">
+		<div class="dizhi">
+		<p>地点</p>
+		<input type="text" id="btn" placeholder="例如: 8号宿舍楼">
+		<a href="address-management.html"><img src="images/return2.png" alt=""></a>
+		</div>
+		<div class="xiangqing">
+		<p>详情</p>
+		<input type="text" id="btn" placeholder="#120宿舍 王云">
+		</div>
+		<div class="shangjin">
+		<p>悬赏金</p>
+		<input type="text" id="btn" placeholder="建议悬赏金额 2元">
+		</div>
+		<div class="time">
+		<p>时间</p>
+		<input type="text" id="btn" placeholder="4点之前">
+		</div>
+		<div class="sex">
+		<p>性别限制</p>
+		<form>
+		<input type="radio" name="Sex" value="female"/>
+		不限
+		<input class="sex1" type="radio" name="Sex" value="male"/>
+		限男生
+		<input class="sex1" type="radio" checked="checked" name="Sex" value="female"/>
+		限女生
+		</form>
+		</div>
+		<div class="beizhu">
+		<p>备注</p>
+		<input type="text" id="btn" value="">
+		</div>
+		<div class="phone">
+		<p>联系电话</p>
+		<input type="text" id="btn" value="">
+		</div>
+	</div>
+	<div class="footer">
+		<a href="pay.html"><input type="button" value="发布"></a>
+	</div>
+	<div class="alert" id="toalert">
+		<div class="bg">
+			<h2>使用帮助</h2>
+		<div class="alert-text">
+			<p>手机上如何支付?<br>
+			您可以通过支付宝的方式完成购买，确保交易安全。<br>
+		后续将开通财富通、网上银行的方式以方便购买。<br>
+		关于退款<br>
+		退至援场余额：审核通过后，会在1个工作日内（少量商品需要3个工作日）把款项退回到您的援场账户；余额可在下次发布时直接冲抵现金，也可随时提现，暂不收取手续费。<br>
+		原路退回：审核通过后，会在3-10个工作日内（少量商品需额外增加3个工作日）把款项退回到您的原支付方，通过网银或支付宝等第三方支付平台进行支付的费用将直接退到原账户，充值卡或返利金额将退回到援场余额</p>
+		</div>
+			<input class="queren" type="button" value="确认" onclick="oBox()" />
+		</div>
+	</div>
+	</div>
+	<script>
+		function Obtn(){
+			var oBtn=document.getElementById('toalert');
+			if(oBtn.style.display=='block'){
+				oBtn.style.display='none';
+				}
+				else{
+					oBtn.style.display='block';
+				}
+			}
+		function oBox(){
+			var oBtns=document.getElementById('toalert');
+			if(oBtns.style.display=='block'){
+				oBtns.style.display='none';
+				}
+			}
+	</script>
+</body>
+</html>

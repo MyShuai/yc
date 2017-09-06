@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>快递单子</title>
+	<link rel="stylesheet" type="text/css" href="css/express.css">
+</head>
+<body>
+	<div class="box">
+		<div class="header">
+			<p>任务类型:<span>快递</span></p>
+		</div>
+		<div class="custodian">
+			<div class="single">
+				<img src="images/touxiang.png" alt="">
+				<h2>小醋坛子<i></i></h2><br/>
+				<p>北京大学</p>
+			</div>
+		</div>
+		<div class="pickup">
+			<div class="pick">
+				<p>取件信息</p>
+				<p>地点:<span>三餐中通快递</span></p>
+				<p>送达信息</p>
+				<p>地点:<span>1号宿舍楼</span></p>
+		</div>
+			</div>
+			<div class="information">
+				<div class="sj">
+					<p>悬赏金:
+					<span>10元</span></p>
+				</div>
+				<div class="time">
+					<p>时间:
+					<span>2016-12-6 13点之前</span></p>
+				</div>
+				<div class="sex">
+					<p>性别限制:
+					<span>限女生</span></p>
+				</div>
+				<div class="beizhu">
+					<p>备注:
+					<span>希望能快点送到</span></p>
+				</div>
+				<input class="cancel" type="button" value="接单" id="aaa" onclick="Obtn()">
+			</div>		
+	</div>
+		<div class="tocancel" id="tocancel">
+		<div class="alert" id="alert">
+			<p>你确定要接单？</p>
+			<input class="quxiao" type="button" value="取消" id="bbb" onclick="quxiao()">
+			<input class="queding" type="button" value="确定" onclick="queding()">
+		</div>
+	</div>
+	<div class="toqueding" id="toqueding">
+		<a href="liststatus.html">
+		<div class="alert1" id="alert1" onclick="ccc()">
+			<p>你已成功接单</p>
+		</div>
+		</a>
+	</div>
+		<script>
+			function Obtn(){
+			var oBtn=document.getElementById('tocancel');
+			if(oBtn.style.display='none'){
+				oBtn.style.display='block';
+				}
+			}
+			function quxiao(){
+			var oBtn=document.getElementById('tocancel');
+			if(oBtn.style.display='block'){
+				oBtn.style.display='none';
+				}
+			}
+			function queding(){
+			var oBtn=document.getElementById('toqueding');
+			if(oBtn.style.display='none'){
+				oBtn.style.display='block';
+				}
+			}
+		</script>
+</body>
+</html>

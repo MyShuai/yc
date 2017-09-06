@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>版本更新</title>
+	<link rel="stylesheet" type="text/css" href="css/upgraded.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+	<div class="header">
+			<a href="index.html">
+				<img src="images/return.png">
+			</a>
+			<h2>谁可以和我聊天</h2>
+	</div>
+	<div class="xiaoxi">
+		<a href=""><p>打开后将推送相应类型消息</p></a>
+	</div>
+	<div class="rw">
+		<p>本校任务</p>
+		<div id="div1" class="open1">
+        <div id="div2" class="open2"></div>
+    </div>
+	</div>
+	<div class="rw">
+		<p>接单提醒</p>
+		<div id="div3" class="open3">
+        <div id="div4" class="open4"></div>
+    </div>
+	</div>
+	<div class="rw">
+		<p>私信通知</p>
+		<div id="div5" class="open5">
+        <div id="div6" class="open6"></div>
+    </div>
+	</div>
+	    <script>
+    	window.onload=function(){
+        var div1=document.getElementById("div1");
+        var div2=document.getElementById("div2");
+        var div3=document.getElementById("div3");
+  		var div4=document.getElementById("div4");
+            div2.onclick=function(){
+          div1.className=(div1.className=="close1")?"open1":"close1";
+          div2.className=(div2.className=="close2")?"open2":"close2";
+        }
+        div4.onclick=function(){
+          div3.className=(div3.className=="close3")?"open3":"close3";
+          div4.className=(div4.className=="close4")?"open4":"close4";
+        }
+        div6.onclick=function(){
+          div5.className=(div5.className=="close5")?"open5":"close5";
+          div6.className=(div6.className=="close6")?"open6":"close6";
+        }
+    }
+    	</script>
+</body>
+</html>

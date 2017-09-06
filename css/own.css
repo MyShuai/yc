@@ -1,0 +1,36 @@
+@charset "utf-8";
+	.items{
+		width: 100%;
+		height: 94px;
+		line-height: 94px;
+		box-sizing:border-box;
+		background: #fff;
+		min-width: 520px;
+	}
+	.items-fitst{
+		height: 140px;
+		line-height: 140px;
+	}
+	.items a{
+		width: 94.667%;
+		height: 94px;
+		font-size: 34px;
+		margin: 0 auto;
+	}
+	.items a img{
+		margin-top: 30px;
+	}
+	.items-fitst a{
+		height: 140px;
+	}
+	.items-fitst a img{
+		margin-top: 12px;
+		margin-right: 3.802%;
+	}
+	.items a span{
+		margin-right: 2.816%;
+	}
+	.items a em{
+		color: #bbb;
+		margin-left: 8.45%;
+	}
